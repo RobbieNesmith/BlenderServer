@@ -1,0 +1,26 @@
+<!doctype html>
+<head>
+<title>Blender Server</title>
+</head>
+<body>
+<h1>Blender Server</h1>
+<form method=post enctype=multipart/form-data>
+  <fieldset>
+    <legend>File IO</legend>
+    <input type=file name=file><br />
+    <input name=outfile placeholder="Output File"><br />
+  </fieldset>
+  <fieldset>
+    <legend>Render type</legend>
+    <input type="radio" name="rtype" value="frame"checked>Frame<br />
+    <input type="radio" name="rtype" value="anim">Animation<br />
+  </fieldset>
+  <fieldset>
+    <legend>Frame Range</legend>
+    <input type=number name=start min=1 value=1>Start Frame<br />
+    <input type=number name=end min=1 value=250>End Frame<br />
+  </fieldset>
+<input type=submit value=Upload>
+</form>
+<a href="renders">Check out the renders</a>
+</body>
